@@ -1,0 +1,71 @@
+{
+  "name": "Timetable",
+  "type": "object",
+  "properties": {
+    "name": {
+      "type": "string",
+      "description": "Timetable name"
+    },
+    "schedule": {
+      "type": "array",
+      "description": "Array of scheduled slots",
+      "items": {
+        "type": "object",
+        "properties": {
+          "day": {
+            "type": "string"
+          },
+          "slot": {
+            "type": "number"
+          },
+          "subject_name": {
+            "type": "string"
+          },
+          "subject_code": {
+            "type": "string"
+          },
+          "faculty_name": {
+            "type": "string"
+          },
+          "room_name": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "semester": {
+      "type": "string",
+      "description": "Semester (e.g. IV)"
+    },
+    "department": {
+      "type": "string",
+      "description": "Department name"
+    },
+    "program": {
+      "type": "string",
+      "description": "Program e.g. B.Tech"
+    },
+    "section": {
+      "type": "string",
+      "description": "Section e.g. A"
+    },
+    "roomNo": {
+      "type": "string",
+      "description": "Room number"
+    },
+    "shift": {
+      "type": "string",
+      "description": "Shift e.g. FIRST"
+    },
+    "conflicts": {
+      "type": "array",
+      "description": "List of detected conflicts",
+      "items": {
+        "type": "string"
+      }
+    }
+  },
+  "required": [
+    "name"
+  ]
+}

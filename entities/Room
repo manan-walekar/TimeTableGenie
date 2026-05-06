@@ -1,0 +1,42 @@
+{
+  "name": "Room",
+  "type": "object",
+  "properties": {
+    "name": {
+      "type": "string",
+      "description": "Room name or number"
+    },
+    "building": {
+      "type": "string",
+      "description": "Building name"
+    },
+    "capacity": {
+      "type": "number",
+      "description": "Seating capacity"
+    },
+    "type": {
+      "type": "string",
+      "enum": [
+        "Lecture Hall",
+        "Lab",
+        "Seminar Room",
+        "Auditorium"
+      ],
+      "description": "Type of room"
+    },
+    "has_projector": {
+      "type": "boolean",
+      "default": false,
+      "description": "Has projector"
+    },
+    "has_ac": {
+      "type": "boolean",
+      "default": false,
+      "description": "Has air conditioning"
+    }
+  },
+  "required": [
+    "name",
+    "capacity"
+  ]
+}

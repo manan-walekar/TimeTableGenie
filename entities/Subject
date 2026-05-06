@@ -1,0 +1,74 @@
+{
+  "name": "Subject",
+  "type": "object",
+  "properties": {
+    "name": {
+      "type": "string",
+      "description": "Subject name"
+    },
+    "code": {
+      "type": "string",
+      "description": "Subject code"
+    },
+    "department": {
+      "type": "string",
+      "description": "Department"
+    },
+    "credits": {
+      "type": "number",
+      "description": "Number of credits"
+    },
+    "hours_per_week": {
+      "type": "number",
+      "description": "Lecture hours per week"
+    },
+    "type": {
+      "type": "string",
+      "enum": [
+        "Theory",
+        "Lab",
+        "Elective"
+      ],
+      "description": "Subject type"
+    },
+    "academic_mappings": {
+      "type": "array",
+      "description": "Academic groups this subject belongs to",
+      "items": {
+        "type": "object",
+        "properties": {
+          "course": {
+            "type": "string"
+          },
+          "year": {
+            "type": "string"
+          },
+          "semester": {
+            "type": "string"
+          },
+          "section": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "preferred_days": {
+      "type": "array",
+      "description": "Preferred days for scheduling (e.g. ['Monday','Wednesday'])",
+      "items": {
+        "type": "string"
+      }
+    },
+    "preferred_slots": {
+      "type": "array",
+      "description": "Preferred slot indices for scheduling",
+      "items": {
+        "type": "number"
+      }
+    }
+  },
+  "required": [
+    "name",
+    "code"
+  ]
+}

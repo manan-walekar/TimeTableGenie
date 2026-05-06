@@ -1,0 +1,69 @@
+{
+  "name": "Faculty",
+  "type": "object",
+  "properties": {
+    "name": {
+      "type": "string",
+      "description": "Full name of the faculty member"
+    },
+    "department": {
+      "type": "string",
+      "description": "Department"
+    },
+    "email": {
+      "type": "string",
+      "description": "Email address"
+    },
+    "phone": {
+      "type": "string",
+      "description": "Phone number"
+    },
+    "designation": {
+      "type": "string",
+      "enum": [
+        "Professor",
+        "Associate Professor",
+        "Assistant Professor",
+        "Lecturer"
+      ],
+      "description": "Academic designation"
+    },
+    "total_hours_per_week": {
+      "type": "number",
+      "default": 20,
+      "description": "Total available teaching hours per week"
+    },
+    "academic_mappings": {
+      "type": "array",
+      "description": "Academic groups this faculty is mapped to",
+      "items": {
+        "type": "object",
+        "properties": {
+          "course": {
+            "type": "string"
+          },
+          "year": {
+            "type": "string"
+          },
+          "semester": {
+            "type": "string"
+          },
+          "section": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "available_slots": {
+      "type": "array",
+      "description": "Available time slots (e.g. ['Mon-1','Mon-2','Tue-1'])",
+      "items": {
+        "type": "string"
+      }
+    }
+  },
+  "required": [
+    "name",
+    "department"
+  ]
+}

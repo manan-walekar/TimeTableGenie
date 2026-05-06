@@ -1,0 +1,45 @@
+{
+  "name": "AppSettings",
+  "type": "object",
+  "properties": {
+    "theme": {
+      "type": "string",
+      "enum": [
+        "light",
+        "dark"
+      ],
+      "default": "light"
+    },
+    "notifications_enabled": {
+      "type": "boolean",
+      "default": true
+    },
+    "auto_backup": {
+      "type": "boolean",
+      "default": false
+    },
+    "backup_frequency": {
+      "type": "string",
+      "enum": [
+        "daily",
+        "weekly",
+        "monthly"
+      ],
+      "default": "weekly"
+    },
+    "default_semester": {
+      "type": "string"
+    },
+    "default_department": {
+      "type": "string"
+    },
+    "time_slots": {
+      "type": "array",
+      "description": "Custom time slot labels",
+      "items": {
+        "type": "string"
+      }
+    }
+  },
+  "required": []
+}
