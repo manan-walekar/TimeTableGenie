@@ -98,7 +98,7 @@ TIME-TABLE-GENIE/
 
 # 🎨 Hero Banner Idea
 
-![Hero Banner](https://images.unsplash.com/photo-1522202176988-66273c2fd55e)
+![Hero Banner](.\TimeTable genieV3\src\hero_page_ttg.png)
 
 ### Tagline
 
@@ -138,19 +138,19 @@ flowchart LR
 
 ## 📱 Dashboard UI
 
-![Dashboard](https://images.unsplash.com/photo-1555066931-4365d14bab8c)
+![Dashboard](.\TimeTable genieV3\src\dashboard.png)
 
 ---
 
 ## 🧞 AI Timetable Generator
 
-![AI Generator](https://images.unsplash.com/photo-1516321318423-f06f85e504b3)
+![AI Generator](.\TimeTable genieV3\src\ttg_generator.png)
 
 ---
 
 ## 📅 Smart Timetable Preview
 
-![Timetable](https://images.unsplash.com/photo-1504384308090-c894fdcc538d)
+![Timetable](.\TimeTable genieV3\src\ttg_preview.png)
 
 ---
 
